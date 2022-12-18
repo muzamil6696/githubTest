@@ -11,7 +11,7 @@
     $stmt->execute([
       ':email' => $_POST['login-email']
     ]);
-
+    //Just to check the commit
     if ($stmt->rowCount() == 0) {
       header("Location: /worldmovies/loginregister.php?login=incorrect");
       exit();
